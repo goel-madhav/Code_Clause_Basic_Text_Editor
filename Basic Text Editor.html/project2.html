@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/38fba58b98.js" crossorigin="anonymous"></script>
+    <title>Basic Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="">
+        <h1 class="shadow">TEXT EDITOR</h1>
+        <div class="flex-box">
+            <div class="row">
+                <div class="col">
+
+                    <button type="button"
+                    onclick="f1()"
+                    class="shadow btn btn-outline-secondary"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Bold Text">                
+                Bold</button>
+
+                <button type="button"
+                onclick="f2()"
+                class="shadow btn btn-outline-success"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Italic Text">
+            Italic</button>
+
+            <button type="button"
+            onclick="f3()"
+            class="shadow btn btn-outline-primary"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Left Align">
+        <i class="fa fa-align-left"></i></button>
+
+        <button type="button"
+        onclick="f4()"
+        class="btn shadow btn btn-outline-secondary"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Center Align">
+    <i class="fas fa-align-center"></i></button>
+
+    <button type="button"
+    onclick="f5()"
+    class="btn shadow btn-outline-primary"
+    data-toggle="tooltip"
+    data-placement="top"
+    title="Right Align">
+<i class="fas fa-align-right"></i></button>
+
+<button type="button"
+onclick="f6()"
+class="btn shadow btn-outline-secondary"
+data-toggle="tooltip"
+data-placement="top"
+title="Uppercase Text">
+Upper Case</button>
+
+<button type="button"
+onclick="f7()"
+class="btn shadow btn-outline-primary"
+data-toggle="tooltip"
+data-placement="top"
+title="Lowercase Text">
+Lower Case</button>
+
+<button type="button"
+onclick="f8()"
+class="btn shadow btn-outline-primary"
+data-toggle="tooltip"
+data-placement="top"
+title="Capitalize Text">
+Capitilize</button>
+
+<button type="button"
+onclick="f9()"
+class="btn shadow btn-outline-primary side"
+data-toggle="tooltip"
+data-placement="top"
+title="Tool Tip on Top">
+Clear Text</button>
+
+
+                
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-md-3 col-sm-3">
+        </div>
+        <div class="col-md-6 col-sm-9">
+            <div clas="flex-box">
+                <textarea class="input shadow" name="name" id="textarea1" cols="100" rows="15" placeholder="Your text here"></textarea>
+            </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        </div>
+
+    </section>
+    
+    <script>
+        function f1() {
+    //function to make the text bold using DOM method
+    document.getElementById("textarea1").style.fontWeight = "bold";
+}
+  
+function f2() {
+    //function to make the text italic using DOM method
+    document.getElementById("textarea1").style.fontStyle = "italic";
+}
+  
+function f3() {
+    //function to make the text alignment left using DOM method
+    document.getElementById("textarea1").style.textAlign = "left";
+}
+function f4() {
+    //function to make the text alignment center using DOM method
+    document.getElementById("textarea1").style.textAlign = "center";
+}
+  
+function f5() {
+    //function to make the text alignment right using DOM method
+    document.getElementById("textarea1").style.textAlign = "right";
+}
+  
+function f6() {
+    //function to make the text in Uppercase using DOM method
+    document.getElementById("textarea1").style.textTransform = "uppercase";
+}
+  
+function f7() {
+    //function to make the text in Lowercase using DOM method
+    document.getElementById("textarea1").style.textTransform = "lowercase";
+}
+function f8() {
+    //function to make the text capitalize using DOM method
+    document.getElementById("textarea1").style.textTransform = "capitalize";
+}
+  
+function f9() {
+    //function to make the text back to normal by removing all the methods applied 
+    //using DOM method
+    document.getElementById("textarea1").style.fontWeight = "normal";
+    document.getElementById("textarea1").style.textAlign = "left";
+    document.getElementById("textarea1").style.fontStyle = "normal";
+    document.getElementById("textarea1").style.textTransform = "capitalize";
+    document.getElementById("textarea1").value = " Enter text here";
+}
+    </script>
+    
+</body>
+</html>
